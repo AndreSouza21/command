@@ -38,7 +38,15 @@ namespace Atividade_Command
             return db.Remove(id);
         }
 
-
+        public void ShowAll()
+        {
+            Console.Write("\n[ ");
+            foreach (var item in db)
+            {
+                Console.Write($"({item.Key}:{item.Value}");
+            }
+            Console.Write(" ]\n");
+        }
 
     }
 }
