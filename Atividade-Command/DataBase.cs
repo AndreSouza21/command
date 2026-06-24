@@ -9,7 +9,7 @@ namespace Atividade_Command
 {
     internal class DataBase
     {
-        private Dictionary<int, string> db = new Dictionary<int, string>();
+        private Dictionary<int, Pessoa> db = new Dictionary<int, Pessoa>();
 
         public DataBase() { }
 
@@ -17,20 +17,20 @@ namespace Atividade_Command
         {
             if (!db.ContainsKey(id))
             {
-                db.Add(id, nome);
+                db.Add(id, new Pessoa(id, nome));
             }
             else
             {
                 Console.WriteLine("Erro: Este ID já existe.");
             }
         }
-        public string Buscar(int id)
+        public Pessoa Buscar(int id)
         {
-            if (db.TryGetValue(id, out string valor))
+            if (db.TryGetValue(id, out Pessoa pessoa))
             {
-                return valor;
+                return pessoa;
             }
-            return "Não encontrado";
+            return null;
         }
 
         public bool Remover(int id)
@@ -43,10 +43,10 @@ namespace Atividade_Command
             Console.Write("\n[ ");
             foreach (var item in db)
             {
-                Console.Write($"({item.Key}:{item.Value}");
+                Console.Write($"({item.Value.GetPessoaId()} {item.Value.GetPessoaNome()}) ");
             }
-            Console.Write(" ]\n");
-        }
+            Console.Write("]\n");
 
+        }
     }
 }

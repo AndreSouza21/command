@@ -16,10 +16,11 @@ namespace Atividade_Command
 
         public object Execute(object arg)
         {
-            if (arg is int id)
-            {
-                db.Remover(id);
-            }
+            string[] args = (string[])arg;
+            int id = int.Parse(args[0]);
+
+            db.Remover(id);
+
             return null;
         }
 

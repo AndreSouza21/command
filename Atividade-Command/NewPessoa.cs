@@ -16,16 +16,12 @@ namespace Atividade_Command
 
         public object Execute(object arg)
         {
-            if (arg is ValueTuple<string, int> dados)
-            {
-                string nome = dados.Item1;
-                int id = dados.Item2;
+            string[] args = (string[])arg;
 
-                db.Inserir(id, nome);
+            int id = int.Parse(args[0]);
+            string nome = string.Join(" ", args.Skip(1));
 
-                
-            }
-
+            db.Inserir(id, nome);
 
             return null;
         }

@@ -10,7 +10,7 @@ namespace Atividade_Command
     {
         private DataBase db;
 
-        public void AllCommand(DataBase db) { this.db = db; }
+        public All(DataBase db) { this.db = db; }
 
         public object Execute(object obj)
         {
@@ -23,11 +23,13 @@ namespace Atividade_Command
     {
         private DataBase db;
 
-        public void GetCommand(DataBase db) { this.db = db; }
+        public Get(DataBase db) { this.db = db; }
 
         public object Execute(object obj)
         {
-            int id = (int)obj;
+            string[] args = (string[])obj;
+            int id = int.Parse(args[0]);
+
             return db.Buscar(id);
         }
     }
