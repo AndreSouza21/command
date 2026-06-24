@@ -6,3 +6,10 @@ C:\Users\paulin\Desktop\Nova pasta (7)\command\command\Atividade-Command\obj\Deb
 C:\Users\paulin\Desktop\Nova pasta (7)\command\command\Atividade-Command\obj\Debug\Atividade-Command.exe
 C:\Users\paulin\Desktop\Nova pasta (7)\command\command\Atividade-Command\obj\Debug\Atividade-Command.pdb
 C:\Users\paulin\Desktop\Nova pasta (7)\command\command\Atividade-Command\obj\Debug\Atividade-Command.exe.config
+C:\Users\Andrépvp\Desktop\proj\command\command\Atividade-Command\bin\Debug\Atividade-Command.exe.config
+C:\Users\Andrépvp\Desktop\proj\command\command\Atividade-Command\bin\Debug\Atividade-Command.exe
+C:\Users\Andrépvp\Desktop\proj\command\command\Atividade-Command\bin\Debug\Atividade-Command.pdb
+C:\Users\Andrépvp\Desktop\proj\command\command\Atividade-Command\obj\Debug\Atividade-Command.csproj.AssemblyReference.cache
+C:\Users\Andrépvp\Desktop\proj\command\command\Atividade-Command\obj\Debug\Atividade-Command.csproj.CoreCompileInputs.cache
+C:\Users\Andrépvp\Desktop\proj\command\command\Atividade-Command\obj\Debug\Atividade-Command.exe
+C:\Users\Andrépvp\Desktop\proj\command\command\Atividade-Command\obj\Debug\Atividade-Command.pdb
